@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Map Trial Two</title>
+    <h1>Mappy Hour!</h1>
+    <h2>Every Wednesday at 5pm at McCone Hall</h2>
+    <br>
+    <p>Are you looking for some help with your map? Or, do you like talking to people about maps? Come join us for a casual gathering to discuss all things mappy!</p>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body { margin:500; padding:20; }
+    #map { position:relative; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+
+<div id='map' style="width: 1000px; height: 500px;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpY2lhLWNvd2FydCIsImEiOiJjanJ2MnJwdngxOWw5M3ptOTV0djJ4bHRkIn0.tGu71HblsKtogK1tukByUQ';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/alicia-cowart/cjrv2x8fu0bap1fmipkobyenz',
+  center: [-98.232656, 46.077181],
+  zoom: 3.3
+});
+</script>
+
+</body>
+</html>
